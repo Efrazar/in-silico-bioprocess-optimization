@@ -1,0 +1,11 @@
+# Core Data Science & Math
+numpy
+pandas
+scipy
+
+# Machine Learning & Modeling
+scikit-learn
+scikit-optimize
+
+# Visualization
+matplotlib

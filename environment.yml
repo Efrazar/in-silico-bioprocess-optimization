@@ -1,0 +1,19 @@
+name: jupyterlab
+channels:
+  - r
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas
+  - plotly
+  - python
+  - scikit-learn
+  - scipy
+  - seaborn
+  - scikit-optimize
+
