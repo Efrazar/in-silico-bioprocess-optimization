@@ -26,10 +26,14 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
 ## 📂 Repository Structure
 *(Adjust these paths based on how you save your files)*
 * `notebooks/`
-  * `01_Empirical_DoE_Screening_and_Optimization.ipynb` - Scripts for Phase 1 & 2 polynomial modeling.
-  * `02_Mechanistic_ODE_Simulation.ipynb` - Bioreactor simulation using Monod/Luedeking-Piret.
-  * `03_ODE_Constrained_Bayesian_Optimization.ipynb` - The ultimate hybrid architecture script.
+  * `1_DoE_Bioprocess_Simulation.ipynb`
+  * `2_Ordinary_Diferential_Equations_Integrations.ipynb`
+  * `3_Physics-Informed Neural Networks.ipynb`
+  * `4_In_Silico_Optimization.ipynb`
+  * `5_ODE-Constrained Bayesian Optimizer.ipynb`
+  * `Box-Behnken example with synthetic data.ipynb`
 * `src/` - Helper Python functions for true manifold generation and visualization.
+  * `RSM_reduction_optimizer.py`
 
 ## 🛠️ Tech Stack
 * **Python 3.x**
