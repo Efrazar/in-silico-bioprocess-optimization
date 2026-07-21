@@ -34,6 +34,7 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
   * `Box-Behnken example with synthetic data.ipynb`
 * `src/` - Helper Python functions for true manifold generation and visualization.
   * `RSM_reduction_optimizer.py`
+  * `Synthetic_bioreactor.py`
 
 ## 🛠️ Tech Stack
 * **Python 3.x**
