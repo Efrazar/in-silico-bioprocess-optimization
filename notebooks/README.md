@@ -4,7 +4,7 @@
 
 This repository showcases an end-to-end data science and statistical engineering workflow for optimizing an upstream cell culture bioprocess. Operating within a simulated Quality by Design (QbD) framework, this project applies a 3-factor Box-Behnken Design (BBD) to model and maximize critical quality attributes (CQAs) while strictly adhering to biological constraints.
 
-The entire workflow is documented and executable within the core Jupyter notebook: `Box-Behnken example with synthetic data.ipynb`.
+The entire workflow is documented and executable within the core Jupyter notebook: `Box_Behnken_DoE_example.ipynb`.
 
 ## **🛠️ Key Technical Highlights**
 
@@ -17,7 +17,7 @@ The entire workflow is documented and executable within the core Jupyter noteboo
 
 ### **1\. Data Ingestion & Phenomenological Simulation**
 
-The workflow starts by ingesting an experimental matrix template (`BBD_synthetic_data_example.csv`). In-silico data generation simulates true cell culture responses based on biological behaviors:
+The workflow starts by creating experimental matrix template using `pyDOE3`. In-silico data generation simulates true cell culture responses based on biological behaviors:
 
 - **Volumetric Titer:** Governed by a parabolic curve peaking near mid-to-high concentrations.
 - **Viable Cell Density:** Penalized by toxic components accumulation.
@@ -50,6 +50,9 @@ To clearly convey the multi-dimensional design space, visualizations are explici
 - **Viability Cliff:** Distinctly displays the flat plateau of high cell viability that drops off sharply as the toxic component threshold is approached.
 
 _Example of the output generated in_ Box_Behnken_DoE_example.ipynb:
+<p align="center">
+  <img src="BBD.png" alt="Hunting MicroMonsters Banner" width="700"/>
+</p>
 
 ## **💻 Environment & Dependencies**
 
