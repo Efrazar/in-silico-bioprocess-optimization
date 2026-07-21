@@ -24,7 +24,6 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
    * Balancing exploration and exploitation to find peak mAb titers with minimal experimental runs.
 
 ## 📂 Repository Structure
-*(Adjust these paths based on how you save your files)*
 * `notebooks/`
   * `1_DoE_Bioprocess_Simulation.ipynb`
   * `2_Ordinary_Diferential_Equations_Integrations.ipynb`
