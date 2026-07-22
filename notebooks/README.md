@@ -1,4 +1,5 @@
-# **Bioprocess Optimization via Response Surface Methodology (RSM) & Multi-Objective Constrained Optimization**
+# **Bioprocess Optimization via Response Surface Methodology (RSM) & Multi-Objective Constrained Optimization** 
+# `Box_Behnken_DoE_example.ipynb`
 
 ## **📌 Project Overview**
 
@@ -69,4 +70,4 @@ Bash
 
 pip install numpy pandas statsmodels scipy matplotlib seaborn jupyterlab
 
-jupyter lab Box_Behnken_DoE_example.ipynb
+jupyter lab `Box_Behnken_DoE_example.ipynb`
