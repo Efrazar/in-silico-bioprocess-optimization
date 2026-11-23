@@ -15,10 +15,11 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
    * Translating biological laws into Ordinary Differential Equations (ODEs).
    * Modeling cell growth using **Monod kinetics**.
    * Modeling mAb secretion using the **Luedeking-Piret equation**.
-   * Simulating dynamic 14-day fed-batch cell cultures using `scipy.integrate.odeint`.
+   * Simulating dynamic 14-day batch cell cultures using `scipy.integrate.odeint`.
 3. **Physics-Informed Neural Networks (PINNs) / Hybrid Models**
-   * Conceptualizing "Grey Box" architectures where Deep Learning predicts kinetic parameters ($\mu_{max}$, $\beta$) based on environmental inputs (Temperature, pH).
-   * Constraining neural networks with biological mass-balance laws.
+   * A classic **PINN** in PyTorch that recovers the kinetic constants ($\mu_{max}$, $\beta$) within 5% from 15 noisy samples, using `torch.autograd` to enforce the ODEs in the loss.
+   * A **hybrid "grey box" model**: a neural network predicts $\mu_{max}$ and $\beta$ from temperature and pH, and a differentiable RK4 solver turns them into 14-day curves. It predicts unseen conditions within ~4% near the optimum.
+   * Bayesian optimization on the learned model reaches 97.5% of the true maximum titer.
 4. **In Silico Optimization (Active Learning)**
    * Using **Bayesian Optimization** (`scikit-optimize`) to intelligently navigate the biological manifold.
    * Balancing exploration and exploitation to find peak mAb titers with minimal experimental runs.
@@ -48,6 +49,8 @@ jupyter lab
 
 Open the notebooks in `notebooks/` in numerical order. Package versions are pinned in `requirements.txt` (tested on Python 3.13). Conda users can run `conda env create -f environment.yml` instead.
 
+PyTorch is only needed for notebook 3. The default Linux install also downloads GPU libraries (several GB). To install the smaller CPU-only build first, run `pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu`.
+
 ## 🛠️ Tech Stack
 * **Python 3.x**
 * `numpy` & `pandas` (Data manipulation)
@@ -55,6 +58,7 @@ Open the notebooks in `notebooks/` in numerical order. Package versions are pinn
 * `scipy` (ODE integration, Mathematical solvers)
 * `matplotlib` (3D Manifold and Time-Series Visualization)
 * `scikit-optimize` / `skopt` (Gaussian Processes and Bayesian Optimization)
+* `torch` / PyTorch (PINN and hybrid model, CPU is enough)
 
 ## 🎯 Objective
 To apply advanced Machine Learning and Deep Learning techniques to solve real-world R&D bottlenecks in the biotechnology CRO space, minimizing physical bioreactor runs while maximizing product yield.
