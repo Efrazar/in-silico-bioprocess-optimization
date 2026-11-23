@@ -14,6 +14,9 @@ statsmodels==0.15.0
 scikit-learn==1.9.1
 scikit-optimize==0.10.2
 
+# Deep learning (notebook 3: PINN and hybrid model)
+torch==2.15.0
+
 # Visualization
 matplotlib==3.11.2
 seaborn==0.13.2
