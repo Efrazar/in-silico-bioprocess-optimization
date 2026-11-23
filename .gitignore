@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter autosaves and workspace settings
+.ipynb_checkpoints/
+.jupyter/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Files the notebooks write when you run them
+notebooks/*.xlsx
+
+# OS clutter
+.DS_Store
+Thumbs.db

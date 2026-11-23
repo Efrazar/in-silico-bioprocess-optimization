@@ -1,19 +1,11 @@
-name: jupyterlab
+# Conda alternative to requirements.txt:
+#   conda env create -f environment.yml
+#   conda activate in-silico-bioprocess
+name: in-silico-bioprocess
 channels:
-  - r
   - conda-forge
-  - bioconda
-  - defaults
 dependencies:
-  - jupyterlab
-  - matplotlib
-  - notebook
-  - numpy
-  - pandas
-  - plotly
-  - python
-  - scikit-learn
-  - scipy
-  - seaborn
-  - scikit-optimize
-
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements.txt

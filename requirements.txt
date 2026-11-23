@@ -1,11 +1,26 @@
-# Core Data Science & Math
-numpy
-pandas
-scipy
+# Versions tested together on Python 3.13 (Nov 2026).
+# Pinned with == so the notebooks give the same results on any machine.
 
-# Machine Learning & Modeling
-scikit-learn
-scikit-optimize
+# Core data science and math
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1
+
+# Design of Experiments and statistics
+pyDOE3==1.6.2
+statsmodels==0.15.0
+
+# Machine learning and optimization
+scikit-learn==1.9.1
+scikit-optimize==0.10.2
 
 # Visualization
-matplotlib
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Excel export of the plate layout (Box-Behnken notebook)
+openpyxl==3.1.5
+
+# Running the notebooks
+jupyterlab
+ipykernel
