@@ -30,7 +30,7 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
   * `3_Physics-Informed Neural Networks.ipynb`
   * `4_In_Silico_Optimization.ipynb`
   * `5_ODE-Constrained Bayesian Optimizer.ipynb`
-  * `Box-Behnken example with synthetic data.ipynb`
+  * `Box_Behnken_DoE_example.ipynb` (15-run Box-Behnken design: recovers 99.8% of the true optimal titer)
 * `src/` - Helper Python functions for true manifold generation and visualization.
   * `RSM_reduction_optimizer.py`
   * `Synthetic_bioreactor.py`
