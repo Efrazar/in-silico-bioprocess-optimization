@@ -35,6 +35,19 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
   * `RSM_reduction_optimizer.py`
   * `Synthetic_bioreactor.py`
 
+## ▶️ Getting Started
+
+```bash
+git clone https://github.com/Efrazar/in-silico-bioprocess-optimization.git
+cd in-silico-bioprocess-optimization
+python -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+jupyter lab
+```
+
+Open the notebooks in `notebooks/` in numerical order. Package versions are pinned in `requirements.txt` (tested on Python 3.13). Conda users can run `conda env create -f environment.yml` instead.
+
 ## 🛠️ Tech Stack
 * **Python 3.x**
 * `numpy` & `pandas` (Data manipulation)
@@ -47,4 +60,4 @@ The project bridges the gap between empirical statistics (Black Box), mechanisti
 To apply advanced Machine Learning and Deep Learning techniques to solve real-world R&D bottlenecks in the biotechnology CRO space, minimizing physical bioreactor runs while maximizing product yield.
 
 ---
-*Created by [Efrazar](https://github.com/Efrazar)*
+*Created by [Efrazar](https://github.com/Efrazar). Released under the [MIT License](LICENSE).*

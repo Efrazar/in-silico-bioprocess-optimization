@@ -8,7 +8,6 @@ Created on Mon Mar 23 13:19:31 2026
 import numpy as np
 
 # Create a synthetic bioreactor function
-l
 def synthetic_bioreactor(temp, ph):
     """
     A sysnthetic objective function simulating mAb titer based on temperature 
@@ -45,7 +44,9 @@ def synthetic_bioreactor(temp, ph):
     # Biology constraint: Titer can't be negative
     return max(0, titer)
 
-# Test the synthetic bioreactor function
-print(f'Titer at ideal conditions (37C, pH_7.2): {synthetic_bioreactor(37.0, 7.2)} g/L')
-print(f'Titer at high temperature (39C, pH_7.2): {synthetic_bioreactor(39.0, 7.2)} g/L')
-print(f'Titer at acidic conditions (37C, pH_6.8): {synthetic_bioreactor(37.0, 6.8)} g/L')
+# Test the synthetic bioreactor function (runs only when this file is executed directly,
+# not when it is imported from a notebook)
+if __name__ == "__main__":
+    print(f'Titer at ideal conditions (37C, pH_7.2): {synthetic_bioreactor(37.0, 7.2)} g/L')
+    print(f'Titer at high temperature (39C, pH_7.2): {synthetic_bioreactor(39.0, 7.2)} g/L')
+    print(f'Titer at acidic conditions (37C, pH_6.8): {synthetic_bioreactor(37.0, 6.8)} g/L')
